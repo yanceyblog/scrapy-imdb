@@ -6,6 +6,7 @@
 ## imdb.cn网站结构分析
 [imdb.cn](http://www.imdb.cn)是国内的一个影视资料库，应该也是作者爬取别人的数据生成的一个网站,并不是[imdb](http://www.imdb.com/)的中文网站。学会爬虫后其实我们也可以做一个这样的网站。
 我们打开http://www.imdb.cn/NowPlaying/ 影视资料库页面，如图
+
 <img src="http://img.blog.csdn.net/20161226234500180?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWFuY2V5X2Jsb2c=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" width = "720" align=center />
 
 该资料库共有292300 条记录 14615 页
@@ -19,7 +20,9 @@
 
 接下来我们分析每个电影的url，我们点开《大脑东海》它的url为http://www.imdb.cn/title/tt4912402 同样的点开其他的电影，可以发现一个规律，url的格式为http://www.imdb.cn/title/tt{多个数字}
 好，现在我们已经找到两个规律，一个是所有电影资料列表的url规律，另一个是每个电影的url规律。我们现在要通过所有的列表，下载每个电影的详细信息，比如电影名称、导演、演员、上映时间、国家等信息。
+
 <img src="http://img.blog.csdn.net/20161226234845931?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWFuY2V5X2Jsb2c=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" width = "720" align=center />
+
 ## 创建爬虫项目
 使用命令创建一个项目`scrapy startproject imdb`
 
@@ -169,9 +172,13 @@ cmdline.execute("scrapy crawl imdb".split())
 
 ```
 在pycharm中运行run.py，同样可以运行imdb爬虫
+
 <img src="http://img.blog.csdn.net/20161226235123282?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWFuY2V5X2Jsb2c=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" width = "720" align=center />
+
 我个人建议使用集成开发环境进行开发，比如pycharm，pycharm可以轻松的切换python环境或者是安装依赖库。可以通过File-->Default settings-->Project interpreter
+
 <img src="http://img.blog.csdn.net/20161226235356246?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWFuY2V5X2Jsb2c=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" width = "720" align=center />
+
 点击左下角的“+”可以搜索安装第三方库，先大致提一下，后面我会专门介绍。
 
 
