@@ -1,7 +1,8 @@
 #imdb.cn爬虫实例
+
 [TOC]
 
-> 实现爬取imdb.cn所有影视资料的scrapy爬虫。
+> 实现爬取imdb.cn所有影视资料的scrapy爬虫，博客地址http://blog.csdn.net/yancey_blog/article/details/53890884
 
 ## imdb.cn网站结构分析
 [imdb.cn](http://www.imdb.cn)是国内的一个影视资料库，应该也是作者爬取别人的数据生成的一个网站,并不是[imdb](http://www.imdb.com/)的中文网站。学会爬虫后其实我们也可以做一个这样的网站。
