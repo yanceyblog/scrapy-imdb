@@ -33,7 +33,9 @@ You can start your first spider with:
     scrapy genspider example example.com
 ```
 使用pycharm打开我们创建的imdb项目，项目结构如下
+
 <img src="http://img.blog.csdn.net/20161226235039406?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQveWFuY2V5X2Jsb2c=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" width = "360" align=center />
+
 根据我们需要的信息重写items.py
 
 ```python
